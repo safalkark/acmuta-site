@@ -19,7 +19,7 @@ interface PeopleProps {
   
   const People: React.FC<PeopleProps> = ({ name, role, imageUrl, socialLinks }) => {
   return (
-    <div className="flex items-center space-x-4 py-4">
+    <div className="flex items-center space-x-4 py-4 ml-15 lg:ml-0">
       <div className="flex-shrink-0">
         <Image 
           src={imageUrl} 
@@ -33,7 +33,7 @@ interface PeopleProps {
       <div className='flex-grow'>
         <h2 className="text-lg lg:text-xl font-semibold">{name}</h2>
         <h4 className="text-sm mb-2 text-green-100">{role}</h4>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 ">
           {socialLinks?.linkedin && (
             <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 text-lg">
               <BsLinkedin />

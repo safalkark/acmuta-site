@@ -22,7 +22,7 @@ interface DepartmentProps {
 const Department: React.FC<DepartmentProps> = ({ name, logoUrl, people }) => {
   return (
     <section className="items-center mb-12">
-      <div className="flex items-center space-x-4 mb-6">
+      <div className="flex items-center space-x-4 mb-6 ml-20 lg:ml-0">
         <Image
           src={logoUrl}
           alt={`${name} logo`}
